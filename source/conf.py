@@ -15,6 +15,8 @@ author = 'takanory'
 
 extensions = [
     "myst_parser",
+    "sphinxext.opengraph",
+    'sphinx_copybutton',
 ]
 
 templates_path = ['_templates']
@@ -28,3 +30,6 @@ language = 'ja'
 html_theme = 'furo'
 html_static_path = ['_static']
 html_logo = "_static/logo.png"
+
+ogp_site_url = "https://pyconjptv25-sphinx-live-demo.readthedocs.io/"
+ogp_image = "https://pyconjptv25-sphinx-live-demo.readthedocs.io/en/latest/_static/logo.png"
