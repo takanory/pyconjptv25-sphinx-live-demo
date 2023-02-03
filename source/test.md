@@ -1,3 +1,11 @@
+---
+py-config:
+  splashscreen:
+    autoclose: true
+  packages:
+  - matplotlib
+---
+
 # 見出し
 
 ほげほげ
@@ -24,3 +32,25 @@ for i in range(1, 101):
 * {fab}`twitter` @takanory
 * {fab}`python` Python
 * {fas}`cable-car` ケーブルカー
+
+```{py-repl}
+def fizzbuzz(num):
+    match i % 3, i % 5:
+        case (0, 0):
+            return "FizzBuzz"
+        case (0, _):
+            return "Fizz"
+        case (_, 0):
+            return "Buzz"
+        case _:
+            return i
+
+for i in range(1, 101):
+    print(fizzbuzz(i), end=", ")
+    if i % 10 == 0:
+        print()
+print()
+```
+
+```{py-terminal}
+```
